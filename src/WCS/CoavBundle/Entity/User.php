@@ -127,7 +127,7 @@ class User
     private $reviewsAuthor;
 
     /**
-     * @ORM\OneToOne(targetEntity="WCS\CoavBundle\Entity\Flight", mappedBy="pilot")
+     * @ORM\OneToMany(targetEntity="WCS\CoavBundle\Entity\Flight", mappedBy="pilot")
      *
      */
     private $pilots;
